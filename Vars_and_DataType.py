@@ -298,18 +298,18 @@
 #*Elements can be removed from the Set by using built-in remove() function but a KeyError arises if element doesn't exist in the set. To remove elements from a set without KeyError, use discard(), if the element doesn't exist in the set, it remains unchanged.
 
 #* Remove Method
-setDeletion = set([1,2,3,4,5,6,'Geeks',8,9,10])
-print('Inital Set: ')
-print(setDeletion)
-
-setDeletion.remove(5)
-setDeletion.remove(6)
-print('\nSet after Remove of two element: ')
-print(setDeletion)
-
-setDeletion.discard(8)
-setDeletion.discard('Geeks')
-print('\nAfter Discarding of the elements: ')
-print(setDeletion)
+# setDeletion = set([1,2,3,4,5,6,'Geeks',8,9,10])
+# print('Inital Set: ')
+# print(setDeletion)
+#
+# setDeletion.remove(5)
+# setDeletion.remove(6)
+# print('\nSet after Remove of two element: ')
+# print(setDeletion)
+#
+# setDeletion.discard(8)
+# setDeletion.discard('Geeks')
+# print('\nAfter Discarding of the elements: ')
+# print(setDeletion)
 
 
