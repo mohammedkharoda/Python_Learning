@@ -176,3 +176,32 @@ print('Shift Right Operator: ',res)
 b = -10
 res = b << 1
 print('Shift left: ', res)
+
+#! ------------------ Program for Nth term of Arithmetic Progression series (AP) ------------------------
+#? The Arithmetic Progression Series is nothing but we can say that the difference
+#* {a+(n-1)d } Series of nth term is need to find
+#* Data To be used: a = 5000(First Month salary) , d = 2000 , n = 12
+
+a = int(input('Enter Monthly Salary: '))
+d = int(input('Enter your Increment : '))
+n = int(input('Amount of months: '))
+res = a+(n+1)*d
+print('Salary after',n,'Months: ', res)
+
+#! ------------------ Program for Nth term of Geometeric Progression series (GP) ------------------------
+#? The adjustance number ratio will always be equal/common for all number in the series
+#? For Example {d = c*r} [d = Previous Number , c = current number , r = ratio between them]
+#* a*r^n-1 (a = first term , r = ratio , n = nth term need to find)
+
+a = int(input('Salary amount: '))
+r = int(input('common ratio: '))
+n = int(input('Nth term to find: '))
+res = a*r^n-1
+print('Geometery Progressions: ',res)
+
+#! ------------------ Program for Natural Number Sum Up ------------------------
+#* n*(n+1)/2 -> The Formaula for the total of the natural number in the series
+#* n = 10
+n = 10
+res = n*(n+1)/2
+print('Money Saved: ',res)
