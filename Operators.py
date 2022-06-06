@@ -2,7 +2,7 @@
 value1 = 2
 value2 = 3
 res = value1+value2
-print('Addition: ',res)
+print('Addition result: ',res)
 
 # Subtraction Operations
 val1 = 2
