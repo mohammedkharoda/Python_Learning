@@ -177,7 +177,7 @@ b = -10
 res = b << 1
 print('Shift left: ', res)
 
-#! ------------------ Program for Nth term of Arithmetic Progression series (AP) ------------------------
+# ! ------------------ Program for Nth term of Arithmetic Progression series (AP) ------------------------
 #? The Arithmetic Progression Series is nothing but we can say that the difference
 #* {a+(n-1)d } Series of nth term is need to find
 #* Data To be used: a = 5000(First Month salary) , d = 2000 , n = 12
@@ -200,8 +200,23 @@ res = a*r^n-1
 print('Geometery Progressions: ',res)
 
 #! ------------------ Program for Natural Number Sum Up ------------------------
-#* n*(n+1)/2 -> The Formaula for the total of the natural number in the series
-#* n = 10
+# * n*(n+1)/2 -> The Formaula for the total of the natural number in the series
+# * n = 10
 n = 10
 res = n*(n+1)/2
 print('Money Saved: ',res)
+
+#! ------------------ Program for finding First and Last number ------------------------
+def firstNumber(n):
+    while(n>9):
+        n=n//10
+    return print('First Number is : ',n)
+
+def lastNumber(n):
+    if(n>abs(0)):
+        res = n%10
+        print('Last number',res)
+
+n = 98574
+firstNumber(n)
+lastNumber(n)
