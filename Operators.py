@@ -112,3 +112,67 @@ print('The is operator in the list assignment: ',x is y)
 x = 'geeks'
 y = 'geeks'
 print('The is not operator',x is not y)
+
+#! =============== Membership Operator ===================
+# ? It is used to validation of the value and test that the memeber is present in the sequence or not. Evaulation to true if it find it and to false if it not able to find it.
+
+#! ----- In Operator ---------------
+# * in operator: The ‘in’ operator is used to check if a value exists in a sequence or not. Evaluate to true if it finds a variable in the specified sequence and false otherwise.
+
+list1 = [1,1,3,5,8,9,74]
+list2 = [8,75,6,83,2,10]
+for item in list2:
+    if(item in list1):
+        print('Overlaping: ', item)
+    else:
+        print('Not Overlaping: ',item)
+
+#* 'not in' operator- Evaluates to true if it does not finds a variable in the specified sequence and false otherwise.
+
+x = 20
+y = 35
+list = [10,25,35,45,20]
+if(x not in list):
+    print('X is not found in the list: ' , x)
+else:
+    print('X is found in the list: ', x)
+
+if(y not in list):
+    print('Y is not found in the list: ' , y)
+else:
+    print('Y is found in the list: ', y)
+
+#! ===================== BITWISE OPERATOR ======================
+#? In Python, bitwise operators are used to performing bitwise calculations on integers. The integers are first converted into binary and then operations are performed on bit by bit
+
+#* Bitwise AND Operator : Returns 1 if both the bits are 1 else 0.
+a = 10
+b = 20
+print('Bitwise and  Operation: ',a&b)
+
+#* Bitwise or operator: Returns 1 if either of the bit is 1 else 0.
+a = 10
+b = 4
+print('Bitwise or Operation: ',a|b)
+
+#* Bitwise not operator: Returns one's complement of the number
+a = 20
+print('Not Operator: ',~a)
+
+#* Bitwise xor operator: Returns 1 if one of the bits is 1 and the other is 0 else returns false.
+a = 10
+b = 4
+print('The Bitwise operator: ',a^b)
+
+#! ------------------ Shift Operator -------------------
+# *These operators are used to shift the bits of a number left or right thereby multiplying or dividing the number by two respectively. They can be used when we have to multiply or divide a number by two.
+
+#* Bitwise right shift
+
+a = 10
+res = a >> 1
+print('Shift Right Operator: ',res)
+
+b = -10
+res = b << 1
+print('Shift left: ', res)
