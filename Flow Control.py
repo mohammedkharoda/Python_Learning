@@ -1,13 +1,13 @@
-# # ! ----------------- IF SATMENT --------------------------
-# # ? if statement is the most simple decision-making statement. It is used to decide whether a certain statement or block of statements will be executed or not i.e if a certain condition is true then a block of statement is executed otherwise not
-
-a = 10
-if(a>5):
-    print('The Value is greater than the 5: ', a)
-
-# #! ---------------------------- IF-ELSE Statement ------------------
-# # ? The if statement alone tells us that if a condition is true it will execute a block of statements and if the condition is false it won’t. But what if we want to do something else if the condition is false. Here comes the else statement. We can use the else statement with if statement to execute a block of code when the condition is false.
-
+# # # ! ----------------- IF SATMENT --------------------------
+# # # ? if statement is the most simple decision-making statement. It is used to decide whether a certain statement or block of statements will be executed or not i.e if a certain condition is true then a block of statement is executed otherwise not
+#
+# a = 10
+# if(a>5):
+#     print('The Value is greater than the 5: ', a)
+#
+# # #! ---------------------------- IF-ELSE Statement ------------------
+# # # ? The if statement alone tells us that if a condition is true it will execute a block of statements and if the condition is false it won’t. But what if we want to do something else if the condition is false. Here comes the else statement. We can use the else statement with if statement to execute a block of code when the condition is false.
+#
 a=20
 if(a > 30):
     print('The number is greater than 30: ',a)
@@ -146,3 +146,32 @@ if (checkYear(year)):
     print("Leap Year")
 else:
     print("Not a Leap Year")
+
+# #! //////////////////////// Calculator /////////////////////////////////
+
+import sys
+print(""" Please Select the Operation:
+
+ 1. Add
+ 2. Subtract
+ 3. Multiplication
+ """)
+
+choice = int(input('Select from the operation 1,2 and 3: '))
+
+if choice not in (1,2,3):
+    print('invalid Choice')
+    sys.exit()
+
+a = int(input('Enter First Input: '))
+b = int(input('Enter Second Input: '))
+
+
+if (choice == 1):
+    res = a+b
+elif(choice == 2):
+    res = a-b
+else:
+    res = a*b
+
+print('Result is: ',res)
