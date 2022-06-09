@@ -1,9 +1,14 @@
 # Printing a Table
 
 number = int(input('Enter a Number to get the table: '))
-i = 0
-while( i <= 10):
-    total = i*number
+upper = int(input('Enter a Upper to get the table: '))
+lower = int(input('Enter a Lower to get the table: '))
+
+
+inital = lower
+while( inital <= upper):
+    total = inital*number
     print(total)
-    i = i+1
+    inital = inital+1
+
 
