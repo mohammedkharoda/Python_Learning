@@ -1,50 +1,50 @@
 # !-------------------------- BASIC FUNCTION SYNTAX ------------------
-# def functionCall():
-#     print('Working With Function')
-#
-# print('Before calling Function: ')
-# functionCall()
-# print('Funtion is being called: ')
+def functionCall():
+    print('Working With Function')
+
+print('Before calling Function: ')
+functionCall()
+print('Funtion is being called: ')
 
 #! ------------------------------ global vs local scope ---------------
-# def price(amount,discount,tax):
-#     final = amount-discount+tax
-#     return final # --> Global scope due to return statement
-#     #  print(final) # --> Local scope due to it will print the result statement direct
-#
-# totalValue = price(500,20,250)
-# print(totalValue)
+def price(amount,discount,tax):
+    final = amount-discount+tax
+    return final # --> Global scope due to return statement
+    #  print(final) # --> Local scope due to it will print the result statement direct
+
+totalValue = price(500,20,250)
+print(totalValue)
 
 # !----------------------------------- Argument Type ---------------------
-# def studentName(firstName,lastName):
-#     print(firstName,lastName)
-# # this is called as the keyword args
-# studentName(firstName="Jeremy",lastName="Hanks")
-#
-#
-# def myFixed(x,y=85):
-#     print('x',x)
-#     print('y',y)
+def studentName(firstName,lastName):
+    print(firstName,lastName)
+# this is called as the keyword args
+studentName(firstName="Jeremy",lastName="Hanks")
 
 
-# myFixed(74) -> Default params
-# myFixed(63,74) --> Overwriting default params
+def myFixed(x,y=85):
+    print('x',x)
+    print('y',y)
+
+
+myFixed(74) #-> Default params
+myFixed(63,74) # -> Overwriting default params
 
 #! ------------------------------- Pass by value or Pass by refernce ------------------------
-# def passRef(x):
-#     x[0] = 20
-#
-# lst = [19,30,88,96,78]
-# passRef(lst)
-# print(lst)  # ==> Change happen after the change on the function parameters.
+def passRef(x):
+    x[0] = 20
+
+lst = [19,30,88,96,78]
+passRef(lst)
+print(lst)  # ==> Change happen after the change on the function parameters.
 
 #? reference link is broken if we assign a new value (inside the function)
-# def function(x):
-#     x=20
-#
-# x=10
-# function(x)
-# print(x)
+def function(x):
+    x=20
+
+x=10
+function(x)
+print(x)
 
 #! -------------------------------------- Anonymus Funtions ----------------------------------
 def cube(x):
