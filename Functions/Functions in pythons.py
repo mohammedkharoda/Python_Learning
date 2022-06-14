@@ -55,21 +55,28 @@ cubeV2 = lambda x : x**x*x
 print(cube(7))
 print(cubeV2(7))
 
+#!--------------------------------------- keywords and non-keywords ----------------------------
+def myFun(*args):
+    for arg in args:
+        print(arg)
+myFun('Hello','Welcome','to')
 
+def myFun(**kwargs):
+    for key,value in kwargs.items():
+        print('The value of the input is: ',key,value)
+myFun(first='Working',second="with",last="kwargs")
 
+# ? ----------------------------- *ARGS vs **ARG (CALLBACK) ------------------------
+def callBack(args1,args2,args3):
+    print('args1', args1)
+    print('arg2', args2)
+    print('arg3',args3)
 
+args = ('working' , 'in' , 'dark')
+callBack(*args)
 
-
-
-
-
-
-
-
-
-
-
-
+args2  = {'args1':'Darkness','args2':"shallness","args3":"Threates"}
+callBack(**args2)
 #! ---------------------------------- Misc problem -----------------------
 # def vowelCount(s):
 #     vowel = 'aeiouAEIOU'
