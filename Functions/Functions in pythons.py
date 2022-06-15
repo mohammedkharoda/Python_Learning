@@ -89,3 +89,42 @@ callBack(**args2)
 # print(vowelCount('Working on the goals'))
 
 
+# ! --------------------------------------- Returns Multiple ---------------------
+def fun():
+    str='geeksForgeeks'
+    x = 20
+    return str,x; # Return tuple
+
+firstValue,secondValue = fun() #tuple unpacked here so we need to store in different variable
+print(firstValue)
+print(secondValue)
+
+#!-------------------------------------- SEIVE OF ERATHOSTHENSE ------------------------
+def sieveOfErathosthense(n):
+    n
+    prime=[] # an empty list
+    for i in range(n+1):
+        #Append all the number one by one from 2
+        prime.append(i)
+
+    prime[0]=0
+    prime[1]=0
+
+    p=2
+    while(p*p<=n):
+        # If prime[p] is not changed , then it is a prime
+        if(p!=0):
+            #Update all multiple of p to zero
+            for i in range(p*2,n+1,p):
+                prime[i]=0
+
+        p = p+1
+
+    print('All the number up to',n,'are:')
+    for i in range(len(prime)):
+        if(prime[i]!=0):
+            print(prime[i])
+
+
+number = int(input('Enter the number until you want to find the range: '))
+sieveOfErathosthense(number)
