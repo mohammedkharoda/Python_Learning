@@ -66,7 +66,7 @@ for i in range(3,n+1):
     first=second
     second=current
 
-#! ----------------------------------------- Fibonnaci number --------------------------
+#! ----------------------------------------- gcd --------------------------
 a = int(input('Enter the 1st Number: '))
 b = int(input('Enter the 2nd Number: '))
 small = min(a,b)
